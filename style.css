@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    background: linear-gradient(to right, #9c27b0, #8ecdff);
+}
+nav{
+    width: 80%;
+    position: sticky;
+    margin: 20px auto;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    flex-basis: 50%;
+}
+.logo img{
+    width: 150px;
+}
+.nav-links{
+    flex: 1;
+    text-align: center;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.information{
+    width: 900px;
+    height: 900px;
+    position: absolute;
+    top: 60%;
+    left: -18%;
+    transform: translateY(-50%);
+}
+
+#circle{
+    /* width: 917px;
+    height: 906px;
+    position: absolute;
+    top: 50px;
+    left: 10px;
+    border-radius: 50%;
+    background: #ccc; */
+    
+    width: 800px;
+    height: 800px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    transform: rotate(0deg);
+    transition: 0.5\s;
+   
+}
+.feature div{
+    margin-left: 30px;
+}
+.feature div p{
+    margin-top: 8px;
+}
+.feature img{
+    width: 40px;
+    height: 40px;
+}
+.feature{
+    position: absolute;
+    display: flex;
+    color: #fff;
+}
+.feature h2{
+    font-size: 16px;
+}
+.feature p{
+    font-size: 14px;
+}
+.one{
+    top: 380px;
+    right: 50px;
+}
+.two{
+     top: 150px;
+    left: 308px; 
+    transform: rotate(-90deg);
+}  
+.three{
+    bottom: 385px;
+    left: 25px;
+    transform: rotate(-180deg);
+}
+.four{
+    bottom:150px;
+    right: 308px;
+    transform: rotate(-270deg);
+
+}
+.mobile{
+    width: 110px;
+    position: absolute;
+    top: 19%;
+    left: 35%;
+    transform: translateY(50%);
+    z-index: 1;
+}
+.controls{
+    position: absolute;
+    right: 10%;
+    top: 50%;
+    text-align: center;
+    transform: translateY(-50%);
+}
+.controls h3{
+    color: #fff;
+   
+}
+#upBtn{
+    width: 30px;
+    margin: 6px;
+    cursor: pointer;
+    transform: rotate(180deg);
+    text-align: center;
+}
+#downBtn{
+    width: 30px;
+    margin: 6px;
+    cursor: pointer;
+    text-align: center;
+    align-items: center;
+}
+
+.overlay{
+    width: 0;
+    height: 0;
+    border-top: 500px solid #fff;
+    border-right: 500px solid transparent;
+    border-bottom: 500px solid #fff;
+    border-left: 500px solid #fff;
+    position: absolute;
+    left: -94px;
+    top: -81px;
+}
